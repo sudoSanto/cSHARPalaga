@@ -1,0 +1,7 @@
+C:\Users\Matthew Dal Santo\Desktop\ITDEV110\CSharp Projects\cSHARPataga\ProjectConceptApp\bin\Debug\ProjectConceptApp.exe.config
+C:\Users\Matthew Dal Santo\Desktop\ITDEV110\CSharp Projects\cSHARPataga\ProjectConceptApp\bin\Debug\ProjectConceptApp.exe
+C:\Users\Matthew Dal Santo\Desktop\ITDEV110\CSharp Projects\cSHARPataga\ProjectConceptApp\bin\Debug\ProjectConceptApp.pdb
+C:\Users\Matthew Dal Santo\Desktop\ITDEV110\CSharp Projects\cSHARPataga\ProjectConceptApp\obj\Debug\cSHARPalaga.csproj.CoreCompileInputs.cache
+C:\Users\Matthew Dal Santo\Desktop\ITDEV110\CSharp Projects\cSHARPataga\ProjectConceptApp\obj\Debug\ProjectConceptApp.exe
+C:\Users\Matthew Dal Santo\Desktop\ITDEV110\CSharp Projects\cSHARPataga\ProjectConceptApp\obj\Debug\ProjectConceptApp.pdb
+C:\Users\Matthew Dal Santo\Desktop\ITDEV110\CSharp Projects\cSHARPataga\ProjectConceptApp\obj\Debug\cSHARPalaga.csprojResolveAssemblyReference.cache
