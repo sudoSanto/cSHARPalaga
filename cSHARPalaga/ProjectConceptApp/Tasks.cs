@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace cSHARPalaga
 {
+    //Updated 12/16/2017
+
     class Tasks
     {
         public Tasks() { }
 
         calagaControl tControl = new calagaControl();
-
+ 
         public void RunTasks()
         {
             var taskControl = new Task(MainLoop);
@@ -34,62 +36,71 @@ namespace cSHARPalaga
 
         public void ReadKeys()
         {
-            ConsoleKeyInfo key = new ConsoleKeyInfo();
-
-            while (tControl.KeyOn == 1)//(!Console.KeyAvailable)// && key.Key != ConsoleKey.Escape)
+            while (tControl.RunOn == 1)
             {
-                if (tControl.KeyLock == 0)
+                ConsoleKeyInfo key = new ConsoleKeyInfo();
+
+                while (tControl.KeyOn == 1)
                 {
-                    key = Console.ReadKey(true);
-                    if (tControl.DoKey == 0)
+                    if (tControl.KeyLock == 0)
                     {
-                        switch (key.Key)
+                        key = Console.ReadKey(true);
+                        if (tControl.DoKey == 0)
                         {
-                            case ConsoleKey.UpArrow:
-                                tControl.DoKey = 1;
-                                tControl.PMoveY = -1;
-                                break;
+                            switch (key.Key)
+                            {
+                                case ConsoleKey.UpArrow:
+                                    tControl.DoKey = 1;
+                                    tControl.PMoveY = -1;
+                                    break;
 
-                            case ConsoleKey.DownArrow:
-                                tControl.DoKey = 1;
-                                tControl.PMoveY = 1;
-                                break;
+                                case ConsoleKey.DownArrow:
+                                    tControl.DoKey = 1;
+                                    tControl.PMoveY = 1;
+                                    break;
 
-                            case ConsoleKey.RightArrow:
-                                tControl.DoKey = 1;
-                                tControl.PMoveX = 2;
-                                break;
+                                case ConsoleKey.RightArrow:
+                                    tControl.DoKey = 1;
+                                    tControl.PMoveX = 2;
+                                    break;
 
-                            case ConsoleKey.LeftArrow:
-                                tControl.DoKey = 1;
-                                tControl.PMoveX = -2;
-                                break;
+                                case ConsoleKey.LeftArrow:
+                                    tControl.DoKey = 1;
+                                    tControl.PMoveX = -2;
+                                    break;
 
-                            case ConsoleKey.Q:
-                                tControl.DoKey = 2;
-                                break;
+                                case ConsoleKey.Q:
+                                    tControl.DoKey = 2;
+                                    break;
 
-                            case ConsoleKey.P:
-                                tControl.DoKey = 3;
-                                break;
+                                case ConsoleKey.L:
+                                    tControl.DoKey = 3;
+                                    break;
 
-                            case ConsoleKey.O:
-                                tControl.DoKey = 4;
-                                break;
+                                case ConsoleKey.P:
+                                    tControl.DoKey = 4;
+                                    break;
 
-                            case ConsoleKey.Escape:
-                                break;
+                                case ConsoleKey.O:
+                                    tControl.DoKey = 5;
+                                    break;
 
-                            default:
-                                //if (Console.CapsLock)
-                                //{
-                                //    Console.WriteLine(key.KeyChar);
-                                //}
-                                break;
-                        }//case
-                    }//tControl.DoKey
-                }//KeyLock
-            }//End of loop that watches keypress.
-        }//end ReadKeys
+                                case ConsoleKey.Enter:
+                                    tControl.DoKey = 9;
+                                    break;
+
+                                case ConsoleKey.Escape:
+                                    tControl.DoKey = 10;
+                                    break;
+
+
+                                default:
+                                    break;
+                            }//case
+                        }//tControl.DoKey
+                    }//end tControl.KeyLock
+                }//end tControl.KeyOn
+            }//end tControl.RunOn
+        }//end ReadKeys Class
     }//end Class
 }//end Namespace
