@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace cSHARPalaga
 {
+    //Updated 12/16/2017
+
     class calagaView
     {
         //Menu Width and Height

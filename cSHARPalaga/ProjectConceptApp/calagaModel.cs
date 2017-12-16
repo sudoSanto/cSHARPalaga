@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace cSHARPalaga
 {
+    //Updated 12/16/2017
+
     class calagaModel
     {
         public calagaModel() { }
@@ -448,6 +450,7 @@ namespace cSHARPalaga
             if (Enemy[i] == 0 && timerCheck(ESpawnTimer, ECurSpawnSpeed) && i < ECurMax)
             {
                 if (rnd.Next(1, 100) > PUpSpawn)
+<<<<<<< HEAD
                 {
                     Enemy[i] = 1;
                     EMoveSpeed[i] = ECurMoveSpeed;
@@ -468,6 +471,28 @@ namespace cSHARPalaga
                 //Power Up Spawn
                 else
                 {
+=======
+                {
+                    Enemy[i] = 1;
+                    EMoveSpeed[i] = ECurMoveSpeed;
+                    EShootSpeed[i] = ECurShootSpeed;
+                    EMoveDirX[i] = 0;
+                    EMoveDirY[i] = 0;
+                    do
+                    {
+                        EX[i] = (rnd.Next(5, (Console.WindowWidth - 5)));
+                        EY[i] = (rnd.Next(2, (Console.WindowHeight - 10)));
+                        tempEonE = checkEonECollision(i);
+                        tempPonE = checkPonECollision();
+                    }
+                    while (tempEonE > -1 && tempPonE > -1);
+                    EMoveTimer[i] = ((DateTime.UtcNow - UnixEpoch).TotalMilliseconds + (EMoveSpeed[i] + 1));
+                    EShootTimer[i] = (DateTime.UtcNow - UnixEpoch).TotalMilliseconds;
+                }
+                //Power Up Spawn
+                else
+                {
+>>>>>>> a4514f5a4d137860706cdb36793b890b655209ba
                     tempRnd = rnd.Next(1, 4);
                     //Spread
                     if (tempRnd == 1 && PUpSpread < 2)
