@@ -105,7 +105,7 @@ namespace cSHARPalaga
                             cSound.PlaySound(11);
                             Thread.Sleep(10);
                             cModel.ECol[cModel.TempInt] = 10;
-<<<<<<< HEAD
+
                         }
                         //If Player Collides with Explosive Shot
                         if (cModel.TempInt > -1 && cModel.Enemy[cModel.TempInt] == 13)
@@ -115,7 +115,7 @@ namespace cSHARPalaga
                             Thread.Sleep(10);
                             cModel.ECol[cModel.TempInt] = 10;
                         }
-=======
+
                         }
                         //If Player Collides with Explosive Shot
                         if (cModel.TempInt > -1 && cModel.Enemy[cModel.TempInt] == 13)
@@ -125,7 +125,7 @@ namespace cSHARPalaga
                             Thread.Sleep(10);
                             cModel.ECol[cModel.TempInt] = 10;
                         }
->>>>>>> a4514f5a4d137860706cdb36793b890b655209ba
+
                         //Player Move
                         cView.clearPlayer(cModel.PX, cModel.PY);
                         cModel.playerMove(PMoveX, PMoveY);
