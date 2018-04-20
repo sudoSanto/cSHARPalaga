@@ -1,6 +1,2 @@
 # cSHARPalaga
-My ITDEV110 C# Final Project, cSHARPalaga
-
-A C# Console version of Galaga, MATC ITDEV110 Final Project
-
-See my Blog for information about developing this app @ https://sudosaintblog.wordpress.com/
+Submitted version of ITDEV110 Final.  See ITDEV110 course Repository for updated version.
